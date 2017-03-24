@@ -3,6 +3,16 @@
 	new = checkout -b
 	pod = push origin develop
 	pom = push origin master
+	fod = fetch origin develop
+	fom = fetch origin master
+	rod = rebase origin/develop
+	rom = rebase origin/master
+	pud = push upstream develop
+	pum = push upstream master
+	fud = fetch upstream develop
+	fum = fetch upstream master
+	rud = rebase upstream/develop
+	rum = rebase upstream/master
 	all = commit -am
 	unst = reset
 	fu = "!git commit -am \"fu\"; git commit --amend"
