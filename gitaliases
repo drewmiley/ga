@@ -1,2 +1,9 @@
 [alias]
 	st = status
+	new = checkout -b
+	pod = push origin develop
+	pom = push origin master
+	all = commit -am
+	unst = reset
+	fu = "!git commit -am \"fu\"; git commit --amend"
+	wip = "!git commit -am \"wip\"; git commit --amend"
