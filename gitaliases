@@ -7,3 +7,5 @@
 	unst = reset
 	fu = "!git commit -am \"fu\"; git commit --amend"
 	wip = "!git commit -am \"wip\"; git commit --amend"
+	disp = "!f() { num=${1-5}; git log -$num --oneline; }; f"
+	ignore = "!f() { ign=${1}; echo $ign >> .gitignore; }; f"
