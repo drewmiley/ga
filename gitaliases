@@ -13,7 +13,7 @@
 	fum = fetch upstream master
 	rud = rebase upstream/develop
 	rum = rebase upstream/master
-	all = commit -am
+	all = "!git add .; git commit -m"
 	unst = reset
 	fu = "!git commit -am \"fu\"; git commit --amend"
 	wip = "!git commit -am \"wip\"; git commit --amend"
