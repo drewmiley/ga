@@ -20,3 +20,4 @@
 	disp = "!f() { num=${1-5}; git log -$num --oneline; }; f"
 	ignore = "!f() { ign=${1}; echo $ign >> .gitignore; }; f"
 	edit = "!f() { num=${1-5}; git rebase -i HEAD~$num; }; f"
+	list = "!git config --list | grep alias | cut -c 7-"
