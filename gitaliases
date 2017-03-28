@@ -18,6 +18,6 @@
 	fu = "!git commit -am \"fu\"; git commit --amend"
 	wip = "!git commit -am \"wip\"; git commit --amend"
 	disp = "!f() { num=${1-5}; git log -$num --oneline; }; f"
-	ignore = "!f() { ign=${1}; echo $ign >> .gitignore; }; f"
+	ignore = "!f() { ign=${1}; echo '\n'$ign >> .gitignore; }; f"
 	edit = "!f() { num=${1-5}; git rebase -i HEAD~$num; }; f"
 	list = "!git config --list | grep alias | cut -c 7-"
