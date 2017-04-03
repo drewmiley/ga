@@ -1,17 +1,17 @@
 [alias]
 	st = status
 	new = checkout -b
-	pod = push origin develop
+	pod = push origin development
 	pom = push origin master
-	fod = fetch origin develop
+	fod = fetch origin development
 	fom = fetch origin master
-	rod = rebase origin/develop
+	rod = rebase origin/development
 	rom = rebase origin/master
-	pud = push upstream develop
+	pud = push upstream development
 	pum = push upstream master
-	fud = fetch upstream develop
+	fud = fetch upstream development
 	fum = fetch upstream master
-	rud = rebase upstream/develop
+	rud = rebase upstream/development
 	rum = rebase upstream/master
 	all = "!git add .; git commit -m"
 	unst = reset
