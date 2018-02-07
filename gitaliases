@@ -21,3 +21,7 @@
 	ignore = "!f() { ign=${1}; echo '\n'$ign >> .gitignore; }; f"
 	edit = "!f() { num=${1-5}; git rebase -i HEAD~$num; }; f"
 	list = "!git config --list | grep alias | cut -c 7-"
+	pruneor = remote prune origin
+	pruneup = remote prune upstream
+	pof = push -f origin
+	fo = fetch origin
